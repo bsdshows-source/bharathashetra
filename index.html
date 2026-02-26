@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Bharathashetra School of Dance</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cr:#8B1A1A;--dcr:#5C0E0E;--go:#C9993A;--bgo:#E8B84B;--pg:#F5E6C0;--cr2:#FAF3E0;--dk:#1A0A0A;--dk2:#2C1810;--gn:#4CAF8A;--am:#E8A838;--rd:#D46060;--br:rgba(201,153,58,0.2);--br2:rgba(201,153,58,0.1);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--dk);color:var(--cr2);font-family:'Cormorant Garamond',serif;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(139,26,26,.14) 0%,transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(201,153,58,.09) 0%,transparent 50%);pointer-events:none;z-index:0;}
+.app{position:relative;z-index:1;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+header{background:linear-gradient(180deg,rgba(92,14,14,.97),rgba(26,10,10,.99));border-bottom:1px solid var(--br);position:sticky;top:0;z-index:100;box-shadow:0 4px 30px rgba(0,0,0,.5);}
+.htop{display:flex;align-items:center;justify-content:space-between;padding:13px 26px;gap:12px;}
+.horn{font-size:22px;color:var(--go);opacity:.7;letter-spacing:4px;}
+.hctr{text-align:center;flex:1;}
+.sname{font-family:'Cinzel Decorative',cursive;font-size:clamp(12px,2vw,18px);color:var(--bgo);letter-spacing:2px;text-shadow:0 0 30px rgba(232,184,75,.4);line-height:1.3;}
+.ssub{font-style:italic;font-size:11px;color:rgba(245,230,192,.55);letter-spacing:3px;margin-top:2px;}
+.hbdr{height:2px;background:linear-gradient(90deg,transparent,var(--go),var(--bgo),var(--go),transparent);opacity:.5;}
+.vsw{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--br);border-radius:5px;overflow:hidden;}
+.vsw button{padding:6px 13px;font-family:'Raleway',sans-serif;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;border:none;background:transparent;color:rgba(245,230,192,.4);cursor:pointer;transition:all .2s;}
+.vsw button.active{background:rgba(201,153,58,.15);color:var(--bgo);}
+.lout{padding:5px 11px;background:transparent;border:1px solid rgba(139,26,26,.4);border-radius:4px;color:var(--rd);font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;}
+.anav{display:flex;flex-wrap:wrap;background:rgba(0,0,0,.4);border-bottom:1px solid var(--br2);}
+.anav button{flex:1 1 auto;padding:9px 10px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:rgba(245,230,192,.45);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all .3s;white-space:nowrap;text-align:center;min-width:0;}
+.anav button:hover{color:var(--bgo);}
+.anav button.active{color:var(--bgo);border-bottom-color:var(--bgo);background:rgba(201,153,58,.07);}
+.dnav{display:flex;padding:0 18px;overflow-x:auto;scrollbar-width:none;background:rgba(0,0,0,.2);}
+.dnav::-webkit-scrollbar{display:none;}
+.dtab{padding:7px 14px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.38);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all .3s;white-space:nowrap;}
+.dtab.active{color:var(--bgo);border-bottom-color:var(--go);}
+main{padding:22px 20px;max-width:1180px;margin:0 auto;}
+.sec{display:none;animation:fadeUp .4s ease;}
+.sec.active{display:block;}
+.pgh{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;}
+.pgt{font-family:'Cinzel Decorative',cursive;font-size:16px;color:var(--bgo);}
+.pgs{font-style:italic;font-size:13px;color:rgba(245,230,192,.44);margin-top:2px;}
+.srow{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:22px;}
+.sc{background:linear-gradient(135deg,rgba(92,14,14,.38),rgba(26,10,10,.58));border:1px solid var(--br);border-radius:8px;padding:13px;text-align:center;position:relative;overflow:hidden;}
+.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--go),transparent);}
+.sn{font-family:'Cinzel Decorative',cursive;font-size:24px;color:var(--bgo);display:block;}
+.sl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.44);font-family:'Raleway',sans-serif;margin-top:3px;}
+.sc.sp .sn{color:var(--gn);} .sc.sl2 .sn{color:var(--am);} .sc.su .sn{color:var(--rd);}
+.mrow{display:flex;gap:7px;margin-bottom:16px;overflow-x:auto;scrollbar-width:none;padding-bottom:3px;}
+.mrow::-webkit-scrollbar{display:none;}
+.chip{padding:5px 13px;border-radius:20px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border:1px solid var(--br);background:transparent;color:rgba(245,230,192,.44);white-space:nowrap;transition:all .2s;}
+.chip:hover{border-color:var(--go);color:var(--bgo);}
+.chip.active{background:rgba(201,153,58,.14);border-color:var(--go);color:var(--bgo);}
+.dv{display:flex;align-items:center;gap:10px;margin:5px 0 16px;opacity:.33;}
+.dv::before{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--go));}
+.dv::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--go),transparent);}
+.dvs{color:var(--go);font-size:12px;letter-spacing:4px;}
+.ctrl{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap;}
+.sb{flex:1;min-width:170px;background:rgba(255,255,255,.04);border:1px solid var(--br);border-radius:6px;padding:9px 13px;color:var(--cr2);font-family:'Cormorant Garamond',serif;font-size:14px;outline:none;transition:border-color .3s;}
+.sb::placeholder{color:rgba(245,230,192,.28);}
+.sb:focus{border-color:var(--go);}
+.fs{background:rgba(255,255,255,.04);border:1px solid var(--br);border-radius:6px;padding:9px 13px;color:var(--cr2);font-family:'Raleway',sans-serif;font-size:11px;outline:none;cursor:pointer;}
+.fs option{background:#2C1810;}
+.tw{background:linear-gradient(180deg,rgba(44,24,16,.38),rgba(26,10,10,.58));border:1px solid rgba(201,153,58,.13);border-radius:11px;overflow:hidden;}
+.th-row{display:grid;grid-template-columns:2fr 1.3fr .85fr .85fr 1.1fr;padding:10px 17px;background:rgba(92,14,14,.48);border-bottom:1px solid rgba(201,153,58,.2);}
+.th{font-family:'Raleway',sans-serif;font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--go);}
+.tr{display:grid;grid-template-columns:2fr 1.3fr .85fr .85fr 1.1fr;padding:12px 17px;border-bottom:1px solid rgba(201,153,58,.06);transition:background .2s;align-items:center;}
+.tr:last-child{border-bottom:none;}
+.tr:hover{background:rgba(201,153,58,.04);}
+.snm{font-size:14px;font-weight:500;color:var(--pg);}
+.spr{font-size:11px;color:rgba(245,230,192,.38);margin-top:2px;font-style:italic;}
+.ctm{font-size:12px;color:rgba(245,230,192,.55);font-family:'Raleway',sans-serif;}
+.bdg{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:20px;font-family:'Raleway',sans-serif;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;}
+.bp{background:rgba(45,106,79,.2);border:1px solid rgba(45,106,79,.5);color:var(--gn);}
+.bl{background:rgba(183,101,10,.2);border:1px solid rgba(183,101,10,.5);color:var(--am);}
+.bu{background:rgba(139,26,26,.2);border:1px solid rgba(139,26,26,.4);color:var(--rd);}
+.bpr{background:rgba(45,106,79,.2);border:1px solid rgba(45,106,79,.5);color:var(--gn);}
+.bab{background:rgba(139,26,26,.2);border:1px solid rgba(139,26,26,.4);color:var(--rd);}
+.bdt{width:5px;height:5px;border-radius:50%;background:currentColor;}
+.btn{padding:5px 11px;border-radius:4px;font-family:'Raleway',sans-serif;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border:1px solid;transition:all .2s;}
+.bpd{background:rgba(45,106,79,.15);border-color:rgba(45,106,79,.5);color:var(--gn);}
+.bpd:hover{background:rgba(45,106,79,.3);}
+.brc{background:rgba(201,153,58,.1);border-color:rgba(201,153,58,.3);color:var(--go);margin-left:4px;}
+.brc:hover{background:rgba(201,153,58,.2);}
+.bun{background:rgba(139,26,26,.15);border-color:rgba(139,26,26,.4);color:var(--rd);}
+.bun:hover{background:rgba(139,26,26,.3);}
+.bprs{background:rgba(45,106,79,.15);border-color:rgba(45,106,79,.5);color:var(--gn);}
+.bprs:hover{background:rgba(45,106,79,.3);}
+.babs{background:rgba(139,26,26,.15);border-color:rgba(139,26,26,.4);color:var(--rd);}
+.babs:hover{background:rgba(139,26,26,.3);}
+.bpri{padding:9px 20px;background:linear-gradient(135deg,var(--cr),var(--dcr));border:1px solid rgba(201,153,58,.3);border-radius:6px;color:var(--pg);font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.bpri:hover{background:linear-gradient(135deg,#A02020,var(--cr));transform:translateY(-1px);}
+.bsec{padding:9px 20px;background:transparent;border:1px solid var(--br);border-radius:6px;color:rgba(245,230,192,.5);font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.bsec:hover{border-color:var(--go);color:var(--pg);}
+.bgld{padding:9px 20px;background:rgba(201,153,58,.2);border:1px solid rgba(201,153,58,.5);border-radius:6px;color:var(--bgo);font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.bgld:hover{background:rgba(201,153,58,.35);}
+.lds{text-align:center;padding:45px 20px;color:rgba(245,230,192,.38);}
+.spin{width:32px;height:32px;border:2px solid rgba(201,153,58,.14);border-top-color:var(--go);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px;}
+.emp{text-align:center;padding:45px 20px;color:rgba(245,230,192,.28);}
+.err{text-align:center;padding:45px 20px;color:rgba(212,96,96,.65);}
+.mov{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:200;display:flex;align-items:center;justify-content:center;padding:18px;opacity:0;pointer-events:none;transition:opacity .3s;}
+.mov.open{opacity:1;pointer-events:all;}
+.mdl{background:linear-gradient(135deg,#2C1810,#1A0A0A);border:1px solid rgba(201,153,58,.3);border-radius:11px;padding:26px;max-width:460px;width:100%;position:relative;transform:translateY(20px);transition:transform .3s;}
+.mov.open .mdl{transform:translateY(0);}
+.mdl::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--go),transparent);border-radius:11px 11px 0 0;}
+.mt{font-family:'Cinzel Decorative',cursive;font-size:15px;color:var(--bgo);margin-bottom:6px;}
+.ms{font-style:italic;color:rgba(245,230,192,.44);font-size:13px;margin-bottom:20px;}
+.mac{display:flex;gap:9px;justify-content:flex-end;margin-top:18px;}
+.rb{background:rgba(255,255,255,.03);border:1px solid rgba(201,153,58,.14);border-radius:8px;padding:16px;margin-bottom:16px;}
+.rr{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(201,153,58,.07);font-size:13px;}
+.rr:last-child{border-bottom:none;}
+.rl{color:rgba(245,230,192,.44);font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+.rv{color:var(--pg);font-weight:500;}
+.toast{position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#2C1810,#1A0A0A);border:1px solid rgba(201,153,58,.3);border-radius:8px;padding:11px 16px;color:var(--pg);font-size:13px;z-index:300;transform:translateY(80px);opacity:0;transition:all .3s;max-width:280px;box-shadow:0 8px 30px rgba(0,0,0,.5);}
+.toast.show{transform:translateY(0);opacity:1;}
+.fg{margin-bottom:14px;}
+.fl{display:block;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.48);margin-bottom:6px;}
+.fi{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--br);border-radius:6px;padding:9px 13px;color:var(--cr2);font-family:'Cormorant Garamond',serif;font-size:14px;outline:none;transition:border-color .3s;}
+.fi::placeholder{color:rgba(245,230,192,.24);}
+.fi:focus{border-color:var(--go);}
+textarea.fi{resize:vertical;min-height:90px;}
+.fsel{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--br);border-radius:6px;padding:9px 13px;color:var(--cr2);font-family:'Raleway',sans-serif;font-size:11px;outline:none;cursor:pointer;}
+.fsel option{background:#2C1810;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+.af{background:rgba(255,255,255,.02);border:1px solid var(--br2);border-radius:9px;padding:18px;margin-bottom:18px;}
+.aft{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--go);margin-bottom:14px;}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:14px;}
+.vc{background:rgba(44,24,16,.5);border:1px solid var(--br);border-radius:9px;overflow:hidden;transition:transform .2s;}
+.vc:hover{transform:translateY(-2px);}
+.vth{width:100%;aspect-ratio:16/9;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;overflow:hidden;}
+.vth video{width:100%;height:100%;object-fit:cover;pointer-events:none;}
+.vov{position:absolute;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.vov:hover{background:rgba(0,0,0,.2);}
+.vpi{width:44px;height:44px;background:rgba(201,153,58,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;}
+.vif{padding:12px;}
+.vtitle{font-size:14px;font-weight:500;color:var(--pg);margin-bottom:4px;}
+.vtag{display:inline-block;padding:2px 8px;border-radius:10px;background:rgba(201,153,58,.14);border:1px solid rgba(201,153,58,.3);color:var(--go);font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;}
+.ua{border:2px dashed var(--br);border-radius:8px;padding:26px;text-align:center;cursor:pointer;transition:all .3s;}
+.ua:hover{border-color:var(--go);background:rgba(201,153,58,.04);}
+.evl{display:flex;flex-direction:column;gap:11px;margin-top:13px;}
+.evi{display:flex;gap:14px;align-items:flex-start;padding:13px;background:rgba(255,255,255,.025);border:1px solid var(--br2);border-radius:8px;}
+.edb{background:linear-gradient(135deg,var(--cr),var(--dcr));border-radius:8px;padding:7px 11px;text-align:center;min-width:52px;}
+.edd{font-family:'Cinzel Decorative',cursive;font-size:18px;color:var(--bgo);line-height:1;}
+.edm{font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.55);margin-top:2px;}
+.enm{font-size:15px;font-weight:500;color:var(--pg);margin-bottom:2px;}
+.edsc{font-size:12px;color:rgba(245,230,192,.48);font-style:italic;}
+.mc{background:rgba(255,255,255,.025);border:1px solid var(--br2);border-radius:8px;padding:15px;margin-bottom:11px;}
+.mfr{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;color:var(--go);margin-bottom:3px;}
+.mbo{font-size:13px;color:var(--pg);line-height:1.5;margin-bottom:7px;}
+.mti{font-size:11px;color:rgba(245,230,192,.28);font-style:italic;}
+.mstt{display:inline-block;padding:2px 8px;border-radius:10px;font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:1px;text-transform:uppercase;}
+.mnw{background:rgba(232,184,75,.14);border:1px solid rgba(232,184,75,.4);color:var(--bgo);}
+.mrd{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);color:rgba(245,230,192,.38);}
+.fqi{border:1px solid var(--br2);border-radius:8px;margin-bottom:9px;overflow:hidden;}
+.fqq{padding:13px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--pg);transition:background .2s;}
+.fqq:hover{background:rgba(201,153,58,.04);}
+.fqq .arr{color:var(--go);transition:transform .3s;font-size:12px;}
+.fqa{padding:0 16px;max-height:0;overflow:hidden;transition:all .3s;font-size:13px;color:rgba(245,230,192,.55);line-height:1.7;}
+.fqi.open .fqa{padding:13px 16px;max-height:300px;}
+.fqi.open .arr{transform:rotate(180deg);}
+.crd{background:linear-gradient(135deg,rgba(44,24,16,.48),rgba(26,10,10,.68));border:1px solid var(--br);border-radius:10px;padding:18px;position:relative;overflow:hidden;margin-bottom:13px;}
+.crd::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--go),transparent);}
+.ct{font-family:'Cinzel Decorative',cursive;font-size:14px;color:var(--bgo);margin-bottom:3px;}
+.cs{font-style:italic;color:rgba(245,230,192,.44);font-size:13px;margin-bottom:12px;}
+.plw{max-width:400px;margin:45px auto;text-align:center;padding:0 16px;}
+.pll{font-family:'Cinzel Decorative',cursive;font-size:clamp(15px,3vw,21px);color:var(--bgo);margin-bottom:5px;text-shadow:0 0 30px rgba(232,184,75,.3);}
+.plt{font-style:italic;color:rgba(245,230,192,.38);font-size:12px;margin-bottom:32px;letter-spacing:2px;}
+.plc{background:linear-gradient(135deg,rgba(44,24,16,.58),rgba(26,10,10,.78));border:1px solid var(--br);border-radius:11px;padding:26px;position:relative;}
+.plc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--go),transparent);border-radius:11px 11px 0 0;}
+.ptgl{display:flex;background:rgba(0,0,0,.28);border:1px solid var(--br);border-radius:5px;margin-bottom:18px;overflow:hidden;}
+.ptgl button{flex:1;padding:7px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;border:none;background:transparent;color:rgba(245,230,192,.38);cursor:pointer;transition:all .2s;}
+.ptgl button.active{background:rgba(201,153,58,.14);color:var(--bgo);}
+.pds{display:flex;gap:9px;justify-content:center;margin:12px 0;}
+.pd{width:11px;height:11px;border-radius:50%;border:2px solid var(--br);background:transparent;transition:all .2s;}
+.pd.filled{background:var(--go);border-color:var(--go);}
+.pkp{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px;}
+.pk{padding:13px;background:rgba(255,255,255,.04);border:1px solid var(--br);border-radius:7px;font-family:'Cinzel Decorative',cursive;font-size:15px;color:var(--pg);cursor:pointer;transition:all .2s;text-align:center;}
+.pk:hover{background:rgba(201,153,58,.1);border-color:var(--go);}
+.pk:active{transform:scale(.95);}
+.perr{color:var(--rd);font-size:13px;font-style:italic;margin-top:9px;min-height:18px;}
+.pnav{display:flex;flex-wrap:wrap;background:rgba(0,0,0,.28);border-bottom:1px solid var(--br2);padding:0 8px;}
+.pnav::-webkit-scrollbar{display:none;}
+.pnav button{flex:1 1 auto;padding:14px 16px;text-align:center;min-width:0;font-family:'Raleway',sans-serif;font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.38);cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;transition:all .3s;white-space:nowrap;}
+.pnav button:hover{color:var(--bgo);}
+.pnav button.active{color:var(--bgo);border-bottom-color:var(--go);}
+.psec{display:none;padding:20px;max-width:780px;margin:0 auto;animation:fadeUp .4s ease;}
+.psec.active{display:block;}
+.sic{background:linear-gradient(135deg,rgba(92,14,14,.28),rgba(26,10,10,.58));border:1px solid rgba(201,153,58,.24);border-radius:11px;padding:20px;margin-bottom:18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+.sav{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--cr),var(--dcr));display:flex;align-items:center;justify-content:center;font-family:'Cinzel Decorative',cursive;font-size:20px;color:var(--bgo);flex-shrink:0;}
+.sin{font-family:'Cinzel Decorative',cursive;font-size:17px;color:var(--bgo);}
+.sid{font-size:13px;color:rgba(245,230,192,.48);font-style:italic;margin-top:2px;}
+.sibdg{display:inline-flex;align-items:center;gap:4px;margin-top:7px;padding:3px 11px;border-radius:20px;background:rgba(201,153,58,.1);border:1px solid rgba(201,153,58,.3);font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;color:var(--go);}
+.pgrd{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:9px;margin-top:12px;}
+.pmc{background:rgba(255,255,255,.025);border:1px solid var(--br2);border-radius:8px;padding:12px;text-align:center;}
+.pmn{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.38);margin-bottom:7px;}
+.asg{display:grid;grid-template-columns:repeat(auto-fill,minmax(95px,1fr));gap:9px;margin-top:12px;}
+.amc{background:rgba(255,255,255,.025);border:1px solid var(--br2);border-radius:8px;padding:12px;text-align:center;}
+.apc{font-family:'Cinzel Decorative',cursive;font-size:20px;color:var(--bgo);}
+.apc.good{color:var(--gn);} .apc.warn{color:var(--am);} .apc.bad{color:var(--rd);}
+.cog{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px;}
+.coc{background:rgba(255,255,255,.025);border:1px solid var(--br2);border-radius:8px;padding:16px;text-align:center;}
+.coi{font-size:26px;margin-bottom:9px;}
+.col{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.38);margin-bottom:5px;}
+.cov{font-size:14px;color:var(--pg);}
+.cov a{color:var(--go);text-decoration:none;}
+.qdash{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;}
+.qcard{background:rgba(44,24,16,.45);border:1px solid var(--br);border-radius:9px;padding:16px;cursor:pointer;transition:all .2s;}
+.qcard:hover{background:rgba(44,24,16,.65);transform:translateY(-2px);}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:14px;}
+.photo-card{background:rgba(44,24,16,.5);border:1px solid var(--br);border-radius:9px;overflow:hidden;transition:transform .2s;cursor:pointer;}
+.photo-card:hover{transform:translateY(-2px);}
+.photo-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.photo-card-info{padding:10px 12px;}
+.photo-event{font-size:12px;font-weight:500;color:var(--pg);margin-bottom:2px;}
+.photo-date{font-size:11px;color:rgba(245,230,192,.38);font-style:italic;}
+@media(max-width:480px){.anav button,.pnav button{font-size:9px;padding:8px 6px;letter-spacing:1px;}}
+@media(max-width:680px){
+  .htop{padding:9px 13px;}
+  main,.psec{padding:14px 13px;}
+  .th-row,.tr{grid-template-columns:1.5fr 1fr 1fr;}
+  .th:nth-child(2),.th:nth-child(3),.tr>*:nth-child(2),.tr>*:nth-child(3){display:none;}
+  .frow{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="htop">
+    <div class="horn">❧</div>
+    <div class="hctr" onclick="secretTap()" style="cursor:pointer">
+      <div class="sname">Bharathashetra School of Dance</div>
+      <div class="ssub" id="portalLbl">Parent Portal</div>
+    </div>
+    <div style="display:flex;gap:9px;align-items:center">
+      <div class="vsw" id="viewSwitch" style="display:none">
+        <button class="active" onclick="switchPortal('admin',event)">Admin</button>
+        <button onclick="switchPortal('parent',event)">Parent</button>
+      </div>
+      <button class="lout" id="loutBtn" style="display:none" onclick="doLogout()">Logout</button>
+    </div>
+  </div>
+  <div class="hbdr"></div>
+</header>
+
+<!-- ADMIN -->
+<div id="adminP" style="display:none">
+<div id="aNavWrap">
+  <nav class="anav">
+    <button class="active" onclick="showSec('pay',this)">💰 Payments</button>
+    <button onclick="showSec('att',this)">✓ Attendance</button>
+    <button onclick="showSec('msg',this)">✉ Messages</button>
+    <button onclick="showSec('vid',this)">▶ Videos</button>
+    <button onclick="showSec('evt',this)">📅 Events</button>
+    <button onclick="showSec('photos',this)">📷 Photos</button>
+    <button onclick="showSec('ana',this)">📊 Analytics</button>
+    <button onclick="showSec('settings',this)">⚙ Settings</button>
+  </nav>
+  <div class="dnav" id="dayNav" style="display:none">
+    <button class="dtab active" onclick="selDay('All',event)">All</button>
+    <button class="dtab" onclick="selDay('Sunday',event)">Sun</button>
+    <button class="dtab" onclick="selDay('Monday',event)">Mon</button>
+    <button class="dtab" onclick="selDay('Tuesday',event)">Tue</button>
+    <button class="dtab" onclick="selDay('Wednesday',event)">Wed</button>
+    <button class="dtab" onclick="selDay('Thursday',event)">Thu</button>
+    <button class="dtab" onclick="selDay('Friday',event)">Fri</button>
+    <button class="dtab" onclick="selDay('Saturday',event)">Sat</button>
+  </div>
+</div>
+<main>
+  <!-- PAYMENTS -->
+  <div class="sec active" id="sec-pay">
+    <div class="pgh"><div><div class="pgt" id="pgT">All Classes</div><div class="pgs" id="pgS">Payment tracking</div></div></div>
+    <div class="mrow">
+      <button class="chip active" onclick="selMon('March 2026',this)">Mar 2026</button>
+      <button class="chip" onclick="selMon('April 2026',this)">Apr 2026</button>
+      <button class="chip" onclick="selMon('May 2026',this)">May 2026</button>
+      <button class="chip" onclick="selMon('June 2026',this)">Jun 2026</button>
+      <button class="chip" onclick="selMon('July 2026',this)">Jul 2026</button>
+      <button class="chip" onclick="selMon('August 2026',this)">Aug 2026</button>
+      <button class="chip" onclick="selMon('September 2026',this)">Sep 2026</button>
+    </div>
+    <div class="srow">
+      <div class="sc"><span class="sn" id="stT">—</span><span class="sl">Total</span></div>
+      <div class="sc sp"><span class="sn" id="stP">—</span><span class="sl">Paid</span></div>
+      <div class="sc sl2"><span class="sn" id="stL">—</span><span class="sl">Late</span></div>
+      <div class="sc su"><span class="sn" id="stU">—</span><span class="sl">Not Paid</span></div>
+    </div>
+    <div class="dv"><span class="dvs">✦ ✦ ✦</span></div>
+    <div class="ctrl">
+      <input class="sb" placeholder="Search student or parent..." id="pSrch" oninput="renderPay()">
+      <select class="fs" id="pSt" onchange="renderPay()">
+        <option value="All">All Statuses</option>
+        <option>Paid</option><option>Late</option><option>Not Paid</option>
+      </select>
+      <select class="fs" id="pTm" onchange="renderPay()"><option value="All">All Times</option></select>
+    </div>
+    <div class="tw">
+      <div class="th-row"><div class="th">Student</div><div class="th">Time</div><div class="th">Day</div><div class="th">Status</div><div class="th">Actions</div></div>
+      <div id="payBody"><div class="lds"><div class="spin"></div><div style="font-style:italic;font-size:14px">Loading students...</div></div></div>
+    </div>
+  </div>
+
+  <!-- ATTENDANCE -->
+  <div class="sec" id="sec-att">
+    <div class="pgh">
+      <div><div class="pgt">Attendance Tracker</div><div class="pgs">Mark class attendance by date</div></div>
+      <input type="date" class="fs" id="attDt" style="font-family:'Raleway',sans-serif;font-size:11px;">
+    </div>
+    <div class="srow">
+      <div class="sc"><span class="sn" id="atT">—</span><span class="sl">Students</span></div>
+      <div class="sc sp"><span class="sn" id="atP">—</span><span class="sl">Present</span></div>
+      <div class="sc su"><span class="sn" id="atA">—</span><span class="sl">Absent</span></div>
+      <div class="sc sl2"><span class="sn" id="atR">—</span><span class="sl">Rate</span></div>
+    </div>
+    <div class="dv"><span class="dvs">✦ ✦ ✦</span></div>
+    <div class="tw">
+      <div class="th-row" style="grid-template-columns:2fr 1.2fr .9fr 1.2fr"><div class="th">Student</div><div class="th">Time</div><div class="th">Day</div><div class="th">Attendance</div></div>
+      <div id="attBody"><div class="lds"><div class="spin"></div></div></div>
+    </div>
+  </div>
+
+  <!-- MESSAGES -->
+  <div class="sec" id="sec-msg">
+    <div class="pgh">
+      <div><div class="pgt">Parent Messages</div><div class="pgs">Questions from parents</div></div>
+      <span id="msgBdg" class="bdg bl" style="font-size:11px;padding:5px 12px;display:none"></span>
+    </div>
+    <div id="msgList"><div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:10px">✉</div><div style="font-style:italic">No messages yet</div></div></div>
+  </div>
+
+  <!-- VIDEOS -->
+  <div class="sec" id="sec-vid">
+    <div class="pgh"><div><div class="pgt">Video Library</div><div class="pgs">Upload technique videos for students</div></div></div>
+    <div class="af">
+      <div class="aft">+ Add New Video</div>
+      <div class="frow">
+        <div class="fg"><label class="fl">Video Title</label><input class="fi" id="vTtl" placeholder="e.g. Nattu Adavu Basic"></div>
+        <div class="fg"><label class="fl">Category</label>
+          <select class="fsel" id="vCat"></select>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl">Upload Video</label>
+        <div class="ua" onclick="document.getElementById('vFile').click()">
+          <div style="font-size:28px;opacity:.4;margin-bottom:8px">🎬</div>
+          <div style="font-size:13px;color:rgba(245,230,192,.44);font-style:italic">Click to select · <span style="color:var(--go)">MP4, MOV, AVI</span></div>
+          <div id="vFName" style="margin-top:7px;font-size:12px;color:var(--go)"></div>
+        </div>
+        <input type="file" id="vFile" accept="video/*" style="display:none" onchange="handleVid(this)">
+      </div>
+      <button class="bgld" onclick="addVid()">Upload Video</button>
+    </div>
+    <div class="ctrl"><select class="fs" id="vFilt" onchange="renderVids()"></select></div>
+    <div class="vgrid" id="vidGrid"><div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:9px">🎬</div><div style="font-style:italic">No videos yet — upload one above!</div></div></div>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="sec" id="sec-evt">
+    <div class="pgh"><div><div class="pgt">Events & Performances</div><div class="pgs">Recitals and important dates</div></div></div>
+    <div class="af">
+      <div class="aft">+ Add New Event</div>
+      <div class="frow">
+        <div class="fg"><label class="fl">Event Name</label><input class="fi" id="eName" placeholder="e.g. Spring Recital 2026"></div>
+        <div class="fg"><label class="fl">Date</label><input type="date" class="fi" id="eDate"></div>
+      </div>
+      <div class="fg"><label class="fl">Description</label><textarea class="fi" id="eDesc" rows="2" placeholder="Venue, time, dress code..."></textarea></div>
+      <button class="bgld" onclick="addEvt()">Add Event</button>
+    </div>
+    <div class="evl" id="evtList"><div class="emp"><div style="font-size:34px;opacity:.28;margin-bottom:9px">📅</div><div style="font-style:italic">No events yet</div></div></div>
+  </div>
+
+  <!-- PHOTOS -->
+  <div class="sec" id="sec-photos">
+    <div class="pgh"><div><div class="pgt">Photo Gallery</div><div class="pgs">Upload photos from recitals and events</div></div></div>
+    <div class="af">
+      <div class="aft">+ Upload New Photos</div>
+      <div class="frow">
+        <div class="fg"><label class="fl">Event Name</label><input class="fi" id="photoEvt" placeholder="e.g. Spring Recital 2026"></div>
+        <div class="fg"><label class="fl">Event Date</label><input type="date" class="fi" id="photoDate"></div>
+      </div>
+      <div class="fg">
+        <label class="fl">Upload Photos</label>
+        <div class="ua" onclick="document.getElementById('photoFiles').click()">
+          <div style="font-size:28px;opacity:.4;margin-bottom:8px">📷</div>
+          <div style="font-size:13px;color:rgba(245,230,192,.44);font-style:italic">Click to select photos · <span style="color:var(--go)">JPG, PNG</span></div>
+          <div id="photoFileNames" style="margin-top:7px;font-size:12px;color:var(--go)"></div>
+        </div>
+        <input type="file" id="photoFiles" accept="image/*" multiple style="display:none" onchange="handlePhotoFiles(this)">
+      </div>
+      <button class="bgld" onclick="uploadPhotos()">Upload Photos</button>
+    </div>
+    <div class="ctrl"><select class="fs" id="photoFilter" onchange="renderPhotos()"><option value="All">All Events</option></select></div>
+    <div id="photoGrid" class="photo-grid"><div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:10px">📷</div><div style="font-style:italic">No photos yet</div></div></div>
+  </div>
+
+  <!-- ANALYTICS -->
+  <div class="sec" id="sec-ana">
+    <div class="pgh"><div><div class="pgt">Analytics</div><div class="pgs">App usage tracking</div></div></div>
+    <div class="srow">
+      <div class="sc"><span class="sn" id="anaTotal">—</span><span class="sl">Total Visits</span></div>
+      <div class="sc sp"><span class="sn" id="anaUnique">—</span><span class="sl">Unique Users</span></div>
+      <div class="sc sl2"><span class="sn" id="anaToday">—</span><span class="sl">Today</span></div>
+      <div class="sc su"><span class="sn" id="anaWeek">—</span><span class="sl">This Week</span></div>
+    </div>
+    <div class="dv"><span class="dvs">✦ ✦ ✦</span></div>
+    <div class="ctrl">
+      <select class="fs" id="anaFilter" onchange="renderAnalytics()">
+        <option value="all">All Activity</option>
+        <option value="login">Logins Only</option>
+        <option value="admin">Admin Only</option>
+      </select>
+      <button class="bsec" onclick="analytics=[];localStorage.removeItem('bsd_analytics');renderAnalytics();toast('Analytics cleared')">Clear Data</button>
+    </div>
+    <div class="tw">
+      <div class="th-row" style="grid-template-columns:2fr 1.5fr 1fr">
+        <div class="th">User</div><div class="th">Action</div><div class="th">Time</div>
+      </div>
+      <div id="anaBody"><div class="lds"><div class="spin"></div></div></div>
+    </div>
+  </div>
+  <!-- SETTINGS -->
+  <div class="sec" id="sec-settings">
+    <div class="pgh"><div><div class="pgt">Settings</div><div class="pgs">Customize categories and FAQs</div></div></div>
+
+    <!-- VIDEO CATEGORIES -->
+    <div class="crd" style="margin-bottom:18px">
+      <div class="ct">Video Categories</div>
+      <div class="cs">Manage categories shown in the video library</div>
+      <div class="af" style="margin-bottom:12px">
+        <div class="aft">+ Add Category</div>
+        <div style="display:flex;gap:9px">
+          <input class="fi" id="newCatInput" placeholder="e.g. Theermanam" style="flex:1">
+          <button class="bgld" onclick="addCategory()">Add</button>
+        </div>
+      </div>
+      <div id="catList"></div>
+    </div>
+
+    <!-- FAQS -->
+    <div class="crd">
+      <div class="ct">FAQ Management</div>
+      <div class="cs">Edit questions shown to parents</div>
+      <div class="af" style="margin-bottom:12px">
+        <div class="aft">+ Add New FAQ</div>
+        <div class="fg"><label class="fl">Question</label><input class="fi" id="newFaqQ" placeholder="e.g. What shoes should my child wear?"></div>
+        <div class="fg"><label class="fl">Answer</label><textarea class="fi" id="newFaqA" rows="3" placeholder="Type the answer here..."></textarea></div>
+        <button class="bgld" onclick="addFaq()">Add FAQ</button>
+      </div>
+      <div id="faqAdminList"></div>
+    </div>
+  </div>
+</main>
+</div>
+
+<!-- PARENT PORTAL -->
+<div id="parentP">
+  <div id="pLogin">
+    <div class="plw">
+      <div class="pll">Bharathashetra</div>
+      <div class="plt">School of Dance — Parent Portal</div>
+      <div class="plc">
+        <div class="ptgl">
+          <button class="active" id="lgTgl" onclick="setMode('login')">Sign In</button>
+          <button id="rgTgl" onclick="setMode('register')">Create PIN</button>
+        </div>
+        <div class="fg"><label class="fl">Parent Email (on file with studio)</label><input class="fi" id="aEmail" type="email" placeholder="your@email.com"></div>
+        <div class="fg">
+          <label class="fl" id="pinLbl">Enter your 4-digit PIN</label>
+          <div class="pds"><div class="pd" id="pd0"></div><div class="pd" id="pd1"></div><div class="pd" id="pd2"></div><div class="pd" id="pd3"></div></div>
+          <div class="pkp">
+            <button class="pk" onclick="pp('1')">1</button><button class="pk" onclick="pp('2')">2</button><button class="pk" onclick="pp('3')">3</button>
+            <button class="pk" onclick="pp('4')">4</button><button class="pk" onclick="pp('5')">5</button><button class="pk" onclick="pp('6')">6</button>
+            <button class="pk" onclick="pp('7')">7</button><button class="pk" onclick="pp('8')">8</button><button class="pk" onclick="pp('9')">9</button>
+            <button class="pk" onclick="pp('c')" style="font-size:11px;font-family:'Raleway',sans-serif;letter-spacing:1px">CLR</button>
+            <button class="pk" onclick="pp('0')">0</button>
+            <button class="pk" onclick="pp('b')" style="font-size:17px">⌫</button>
+          </div>
+        </div>
+        <div class="perr" id="pErr"></div>
+        <button class="bpri" style="width:100%;margin-top:10px" onclick="doAuth()" id="aBtn">Sign In</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pDash" style="display:none">
+    <nav class="pnav">
+      <button class="active" onclick="showPSec('ph',this)">🏠 Home</button>
+      <button onclick="showPSec('pp',this)">💰 Payments</button>
+      <button onclick="showPSec('pa',this)">✓ Attendance</button>
+      <button onclick="showPSec('pv',this)">▶ Videos</button>
+      <button onclick="showPSec('pe',this)">📅 Events</button>
+      <button onclick="showPSec('pphotos',this)">📷 Photos</button>
+      <button onclick="showPSec('pc',this)">📞 Contact</button>
+      <button onclick="showPSec('pf',this)">FAQ</button>
+    </nav>
+
+    <div id="notifBanner" style="display:none;background:linear-gradient(135deg,rgba(183,101,10,.3),rgba(139,26,26,.3));border:1px solid rgba(232,168,56,.4);border-radius:8px;padding:14px 18px;margin:16px 20px;position:relative">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--am);margin-bottom:6px" id="notifTitle">⚠ Payment Reminder</div>
+      <div style="font-size:14px;color:var(--pg);line-height:1.5" id="notifMsg"></div>
+      <button onclick="document.getElementById('notifBanner').style.display='none'" style="position:absolute;top:10px;right:10px;background:none;border:none;color:rgba(245,230,192,.5);font-size:18px;cursor:pointer;padding:4px 8px">×</button>
+    </div>
+
+    <div class="psec active" id="ph">
+      <div class="sic" id="pSIC"></div>
+      <div class="qdash">
+        <div class="qcard" onclick="showPSec('pp',document.querySelectorAll('.pnav button')[1])"><div style="font-size:22px;margin-bottom:8px">💰</div><div class="ct">Payments</div><div style="font-size:12px;color:rgba(245,230,192,.44);font-style:italic">Monthly payment status</div></div>
+        <div class="qcard" onclick="showPSec('pa',document.querySelectorAll('.pnav button')[2])"><div style="font-size:22px;margin-bottom:8px">✓</div><div class="ct">Attendance</div><div style="font-size:12px;color:rgba(245,230,192,.44);font-style:italic">Class attendance history</div></div>
+        <div class="qcard" onclick="showPSec('pv',document.querySelectorAll('.pnav button')[3])"><div style="font-size:22px;margin-bottom:8px">▶</div><div class="ct">Practice Videos</div><div style="font-size:12px;color:rgba(245,230,192,.44);font-style:italic">Watch technique videos at home</div></div>
+        <div class="qcard" onclick="showPSec('pc',document.querySelectorAll('.pnav button')[6])"><div style="font-size:22px;margin-bottom:8px">✉</div><div class="ct">Ask a Question</div><div style="font-size:12px;color:rgba(245,230,192,.44);font-style:italic">Send a message to the studio</div></div>
+      </div>
+    </div>
+
+    <div class="psec" id="pp">
+      <div class="crd"><div class="ct">Monthly Payments</div><div class="cs" id="pFeeInfo">Loading...</div>
+      <div id="balCard" style="background:rgba(0,0,0,.25);border:1px solid var(--br);border-radius:9px;padding:16px;margin-bottom:16px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+          <div style="text-align:center"><div style="font-family:Raleway,sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.4);margin-bottom:5px">Monthly Fee</div><div style="font-family:Cinzel Decorative,cursive;font-size:20px;color:var(--bgo)" id="balFee">—</div></div>
+          <div style="text-align:center"><div style="font-family:Raleway,sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.4);margin-bottom:5px">Balance Due</div><div style="font-family:Cinzel Decorative,cursive;font-size:20px;color:var(--rd)" id="balDue">—</div></div>
+        </div>
+        <div id="lateFeeNote" style="display:none;background:rgba(183,101,10,.15);border:1px solid rgba(183,101,10,.4);border-radius:6px;padding:10px 14px;font-family:Raleway,sans-serif;font-size:11px;letter-spacing:1px;color:var(--am);margin-bottom:12px"></div>
+        <a id="payBtn" href="https://enroll.zellepay.com/qr-codes?data=ewogICJuYW1lIiA6ICJCSEFSQVRIQVNIRVRIQSBOREFORE9QIERBTIES0UiLAogICJ0b2tlbiIgOiAiMzEwMzcxMjg4MyIsCiAgImFjdGlvbiIgOiAicGF5bWVudCIKfQ==" target="_blank" style="display:block;text-align:center;padding:11px;background:linear-gradient(135deg,var(--cr),var(--dcr));border:1px solid rgba(201,153,58,.3);border-radius:7px;color:var(--pg);font-family:Raleway,sans-serif;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none">💳 Pay via Zelle · (310) 371-2883</a>
+      </div>
+      <div class="pgrd" id="pPayG"></div></div>
+    </div>
+
+    <div class="psec" id="pa">
+      <div class="crd"><div class="ct">Attendance History</div><div class="cs">Monthly overview</div><div class="asg" id="pAttG"></div></div>
+    </div>
+
+    <div class="psec" id="pv">
+      <div class="pgh" style="padding-bottom:12px">
+        <div><div class="pgt" style="font-size:14px">Practice Videos</div><div class="pgs">Watch at home to practice</div></div>
+        <select class="fs" id="pvFilt" onchange="renderPVids()"></select>
+      </div>
+      <div class="vgrid" id="pVidG"><div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:9px">🎬</div><div style="font-style:italic">No videos uploaded yet</div></div></div>
+    </div>
+
+    <div class="psec" id="pe">
+      <div class="crd"><div class="ct">Upcoming Events</div><div class="cs">Recitals and performances</div><div class="evl" id="pEvtL"><div class="emp"><div style="font-size:32px;opacity:.28;margin-bottom:8px">📅</div><div style="font-style:italic">No events yet</div></div></div></div>
+    </div>
+
+    <div class="psec" id="pc">
+      <div class="crd" style="margin-bottom:18px">
+        <div class="ct">Contact Us</div><div class="cs">We're happy to help!</div>
+        <div class="cog">
+          <div class="coc"><div class="coi">📱</div><div class="col">Phone / WhatsApp</div><div class="cov"><a href="tel:+13103712883">(310) 371-2883</a></div></div>
+          <div class="coc"><div class="coi">✉</div><div class="col">Email</div><div class="cov"><a href="mailto:bharathashetra@gmail.com">bharathashetra@gmail.com</a></div></div>
+          <div class="coc"><div class="coi">📍</div><div class="col">Location</div><div class="cov">Flower Mound, TX · Keller, TX</div></div>
+          <div class="coc"><div class="coi">📸</div><div class="col">Instagram</div><div class="cov"><a href="https://instagram.com/bharathashetra" target="_blank">@bharathashetra</a></div></div>
+        </div>
+      </div>
+      <div class="crd">
+        <div class="ct">Send a Message</div><div class="cs">We'll reply within 24 hours</div>
+        <div class="fg"><label class="fl">Subject</label><input class="fi" id="mSub" placeholder="e.g. Question about makeup class"></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="fi" id="mBod" placeholder="Type your message here..."></textarea></div>
+        <button class="bpri" onclick="sendMsg()">Send Message</button>
+      </div>
+    </div>
+
+    <div class="psec" id="pphotos">
+      <div class="crd">
+        <div class="ct">Photo Gallery</div>
+        <div class="cs" style="margin-bottom:16px">Photos from recitals and performances</div>
+        <div class="ctrl" style="margin-bottom:14px"><select class="fs" id="pPhotoFilter" onchange="renderParentPhotos()"><option value="All">All Events</option></select></div>
+        <div id="pPhotoGrid" class="photo-grid"><div class="emp"><div style="font-size:36px;opacity:.28;margin-bottom:9px">📷</div><div style="font-style:italic">No photos yet</div></div></div>
+      </div>
+    </div>
+
+    <div class="psec" id="pf">
+      <div class="crd"><div class="ct">Frequently Asked Questions</div><div class="cs" style="margin-bottom:18px">Common parent questions</div><div id="faqL"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- RECEIPT MODAL -->
+<div class="mov" id="rcptMov">
+  <div class="mdl">
+    <div class="mt">Payment Receipt</div><div class="ms" id="rcptMs"></div>
+    <div class="rb" id="rcptBd"></div>
+    <div class="mac"><button class="bsec" onclick="cMov('rcptMov')">Close</button><button class="bpri" onclick="sendRcpt()">✉ Send to Parent</button></div>
+  </div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div class="mov" id="vidMov" style="z-index:250">
+  <div class="mdl" style="max-width:680px">
+    <div class="mt" id="vMT"></div><div class="ms" id="vMS"></div>
+    <video id="vMPl" controls style="width:100%;border-radius:8px;margin-bottom:14px"></video>
+    <div class="mac"><button class="bsec" onclick="cMov('vidMov')">Close</button></div>
+  </div>
+</div>
+
+<!-- PHOTO LIGHTBOX -->
+<div class="mov" id="photoMov" style="z-index:250">
+  <div class="mdl" style="max-width:720px;padding:16px">
+    <img id="photoLgImg" src="" style="width:100%;border-radius:8px;margin-bottom:12px;max-height:70vh;object-fit:contain">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div><div class="mt" id="photoLgTitle" style="font-size:13px"></div><div class="ms" id="photoLgDate" style="margin-bottom:0"></div></div>
+      <button class="bsec" onclick="cMov('photoMov')">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span id="toastMsg"></span></div>
+
+<script>
+const SURL='https://script.google.com/macros/s/AKfycbwTysHNMaJWD-ZKF_wpqMVL2lcX4gvDDEJYM5w5ydIdm4AbtZHtjxlGK2MhPMBpv0_6Fg/exec';
+const MONTHS=['March 2026','April 2026','May 2026','June 2026','July 2026','August 2026','September 2026'];
+const MMAP=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DUE=10;
+const DEFAULT_CATS=['Adavu (Basic Steps)','Hasta Mudras','Footwork','Expressions (Abhinaya)','Alarippu','Jatiswaram','Varnam','Padam','Tillana','Warm Up'];
+let videoCategories=[...DEFAULT_CATS];
+
+let FAQS=[
+  {q:'What should my child wear to class?',a:'Comfortable fitted clothing that allows movement. Traditional bharatanatyam attire (salwar kameez) is preferred. Bare feet required for all classes.'},
+  {q:'What if my child misses a class?',a:'Please notify us at least 2 hours before class. Makeup classes may be available — contact us to schedule one within the same month.'},
+  {q:'When is tuition due?',a:'Tuition is due by the 10th of each month. A $10 late fee applies after the 10th. Payment via Venmo, Zelle, or cash.'},
+  {q:'How do I know if my child is ready for the next level?',a:'Your teacher evaluates progress regularly and will discuss advancement during parent check-ins. Students advance when foundational aadavus are mastered.'},
+  {q:'Are there performance opportunities?',a:'Yes! We hold recitals and participate in community events throughout the year. Check the Events section for upcoming performances.'},
+  {q:'How can my child practice at home?',a:'Check Practice Videos for basic steps and techniques. 10-15 minutes of daily practice on a smooth hard floor is ideal.'},
+];
+
+let students=[],curDay='All',curMon='March 2026',curRcpt=null;
+let attendance={},videos=[],events=[],messages=[],photos=[],loggedIn=null,authMode='login',pin='';
+let analytics=JSON.parse(localStorage.getItem('bsd_analytics')||'[]');
+let selectedPhotoFiles=[];
+
+// ANALYTICS
+function logVisit(user,action){
+  analytics.push({user,action,time:new Date().toISOString()});
+  if(analytics.length>500)analytics=analytics.slice(-500);
+  localStorage.setItem('bsd_analytics',JSON.stringify(analytics));
+}
+
+// PORTAL SWITCH
+let tapCount=0,tapTimer=null;
+function secretTap(){
+  tapCount++;
+  if(tapTimer)clearTimeout(tapTimer);
+  tapTimer=setTimeout(()=>tapCount=0,2000);
+  if(tapCount>=5){
+    tapCount=0;
+    const pwd=prompt('Enter admin password:');
+    if(pwd==='Shreyaa2026'){
+      document.getElementById('viewSwitch').style.display='flex';
+      document.getElementById('adminP').style.display='block';
+      document.getElementById('parentP').style.display='none';
+      document.getElementById('dayNav').style.display='flex';
+      document.getElementById('portalLbl').textContent='Admin Portal';
+      document.querySelectorAll('.vsw button')[0].classList.add('active');
+      document.querySelectorAll('.vsw button')[1].classList.remove('active');
+      toast('Admin access unlocked');
+    }else{
+      alert('Incorrect password');
+    }
+  }
+}
+function switchPortal(w,e){
+  document.querySelectorAll('.vsw button').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  const isAdmin=w==='admin';
+  document.getElementById('adminP').style.display=isAdmin?'block':'none';
+  document.getElementById('parentP').style.display=isAdmin?'none':'block';
+  document.getElementById('dayNav').style.display=isAdmin?'flex':'none';
+  document.getElementById('portalLbl').textContent=isAdmin?'Admin Portal':'Parent Portal';
+  document.getElementById('viewSwitch').style.display=isAdmin?'flex':'none';
+  document.getElementById('loutBtn').style.display=(!isAdmin&&loggedIn)?'block':'none';
+}
+
+// ADMIN NAV
+function showSec(id,el){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sec-'+id).classList.add('active');
+  document.querySelectorAll('.anav button').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  if(id==='att')renderAtt();
+  if(id==='vid')renderVids();
+  if(id==='evt')renderEvts();
+  if(id==='msg')loadMessages();
+  if(id==='ana')renderAnalytics();
+  if(id==='settings')renderSettings();
+  if(id==='photos')renderPhotos();
+}
+
+// LOAD STUDENTS
+async function loadStudents(){
+  try{
+    const r=await fetch(SURL);
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    students=d.students||[];
+
+    // Load payments from Sheets
+    try{
+      const payRes=await fetch(SURL+'?action=getPayments');
+      const payData=await payRes.json();
+      if(payData.payments){
+        payData.payments.forEach(p=>{
+          const s=students.find(x=>x.id===p.studentId);
+          if(!s)return;
+          if(!s.payments)s.payments={};
+          if(p.status==='Paid'){
+            s.payments[p.month]=p.date||'Paid';
+          }
+        });
+      }
+    }catch(e){console.error('Failed to load payments:',e);}
+
+    const attRes=await fetch(SURL+'?action=getAttendance');
+    const attData=await attRes.json();
+    attendance=attData.attendance||{};
+    const times=[...new Set(students.map(s=>s.time).filter(Boolean))].sort();
+    const tf=document.getElementById('pTm');
+    tf.innerHTML='<option value="All">All Times</option>';
+    times.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;tf.appendChild(o);});
+    renderPay();renderAtt();
+  }catch(err){
+    document.getElementById('payBody').innerHTML=`<div class="err"><div style="font-size:30px;margin-bottom:9px">⚠</div><div style="font-style:italic;font-size:13px">${err.message}</div><button class="bpri" style="margin-top:11px" onclick="loadStudents()">Retry</button></div>`;
+  }
+}
+
+// PAYMENT
+function getSt(s,m){
+  if(m==='February 2026'&&s.febStatus&&s.febStatus.trim())return s.febStatus.trim();
+  if(s.payments&&s.payments[m])return 'Paid';
+  const[mn,yr]=m.split(' ');
+  return new Date()>new Date(parseInt(yr),MMAP.indexOf(mn),DUE)?'Late':'Not Paid';
+}
+function bdg(st){const c=st==='Paid'?'bp':st==='Late'?'bl':'bu';return `<span class="bdg ${c}"><span class="bdt"></span>${st}</span>`;}
+function selDay(d,e){
+  curDay=d;
+  document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('active'));
+  e.target.classList.add('active');
+  document.getElementById('pgT').textContent=d==='All'?'All Classes':d+' Class';
+  document.getElementById('pgS').textContent=d==='All'?'Payment tracking':'Payment tracking for '+d;
+  renderPay();renderAtt();
+}
+function selMon(m,el){curMon=m;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');renderPay();}
+function renderPay(){
+  const sr=document.getElementById('pSrch').value.toLowerCase();
+  const sf=document.getElementById('pSt').value;
+  const tf=document.getElementById('pTm').value;
+  const f=students.filter(s=>{
+    const nm=`${s.firstName} ${s.lastName} ${s.parentFirst} ${s.parentLast}`.toLowerCase().includes(sr);
+    const dm=curDay==='All'||s.day===curDay;
+    const st=getSt(s,curMon);
+    return nm&&dm&&(sf==='All'||st===sf)&&(tf==='All'||s.time===tf);
+  });
+  const pool=students.filter(s=>curDay==='All'||s.day===curDay);
+  document.getElementById('stT').textContent=pool.length;
+  document.getElementById('stP').textContent=pool.filter(s=>getSt(s,curMon)==='Paid').length;
+  document.getElementById('stL').textContent=pool.filter(s=>getSt(s,curMon)==='Late').length;
+  document.getElementById('stU').textContent=pool.filter(s=>getSt(s,curMon)==='Not Paid').length;
+  const b=document.getElementById('payBody');
+  if(!f.length){b.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28">🪷</div><div style="font-style:italic;margin-top:9px">No students found</div></div>';return;}
+  b.innerHTML=f.map(s=>{
+    const st=getSt(s,curMon);const paid=st==='Paid';
+    return `<div class="tr"><div><div class="snm">${s.firstName} ${s.lastName}</div><div class="spr">${s.parentFirst} ${s.parentLast}</div></div><div class="ctm">${s.time||'—'}</div><div class="ctm">${s.day}</div><div>${bdg(st)}</div><div style="display:flex;gap:4px;flex-wrap:wrap">${paid?`<button class="btn bun" onclick="undoPay('${s.id}')">Undo</button><button class="btn brc" onclick="showRcpt('${s.id}')">Receipt</button>`:`<button class="btn bpd" onclick="markPaid('${s.id}')">Mark Paid</button>`}</div></div>`;
+  }).join('');
+}
+async function markPaid(id){
+  const s=students.find(x=>x.id==id);if(!s)return;
+  if(!s.payments)s.payments={};
+  s.payments[curMon]=new Date().toLocaleDateString();
+  if(curMon==='February 2026')s.febStatus='Paid';
+  renderPay();toast('✓ '+s.firstName+' marked as paid');
+  try{
+    await fetch(SURL+'?action=savePayment&studentId='+encodeURIComponent(id)+'&month='+encodeURIComponent(curMon)+'&status=Paid&date='+encodeURIComponent(new Date().toLocaleDateString()));
+  }catch(err){console.error('Failed to save payment:',err);}
+}
+async function undoPay(id){
+  const s=students.find(x=>x.id==id);if(!s)return;
+  if(s.payments)delete s.payments[curMon];
+  if(curMon==='February 2026')delete s.febStatus;
+  renderPay();toast('Payment removed for '+s.firstName);
+  try{
+    await fetch(SURL+'?action=savePayment&studentId='+encodeURIComponent(id)+'&month='+encodeURIComponent(curMon)+'&status=&date=');
+  }catch(err){console.error('Failed to remove payment:',err);}
+}
+function showRcpt(id){
+  const s=students.find(x=>x.id==id);if(!s)return;curRcpt=s;
+  const pd=(s.payments&&s.payments[curMon])||new Date().toLocaleDateString();
+  document.getElementById('rcptMs').textContent=curMon+' — Bharathashetra School of Dance';
+  document.getElementById('rcptBd').innerHTML=`<div class="rr"><span class="rl">Student</span><span class="rv">${s.firstName} ${s.lastName}</span></div><div class="rr"><span class="rl">Parent</span><span class="rv">${s.parentFirst} ${s.parentLast}</span></div><div class="rr"><span class="rl">Class</span><span class="rv">${s.day} · ${s.time}</span></div><div class="rr"><span class="rl">Month</span><span class="rv">${curMon}</span></div><div class="rr"><span class="rl">Paid On</span><span class="rv">${pd}</span></div><div class="rr"><span class="rl">Status</span><span style="color:var(--gn);font-family:'Raleway',sans-serif;font-size:11px">✓ Paid</span></div>`;
+  document.getElementById('rcptMov').classList.add('open');
+}
+async function sendRcpt(){
+  if(!curRcpt)return;
+  cMov('rcptMov');
+  try{
+    const res=await fetch(SURL+'?action=sendReceipt&studentId='+encodeURIComponent(curRcpt.id)+'&month='+encodeURIComponent(curMon));
+    const data=await res.json();
+    if(data.success){toast('✉ Receipt sent to '+data.email);}else{toast('❌ Failed to send receipt: '+data.error);}
+  }catch(err){toast('❌ Failed to send receipt');}
+}
+
+// ATTENDANCE
+function getDt(){return document.getElementById('attDt').value||new Date().toISOString().split('T')[0];}
+function renderAtt(){
+  const dt=getDt();
+  const ds=students.filter(s=>curDay==='All'||s.day===curDay);
+  if(!attendance[dt])attendance[dt]={};
+  const pr=ds.filter(s=>attendance[dt][s.id]==='present').length;
+  const ab=ds.filter(s=>attendance[dt][s.id]==='absent').length;
+  document.getElementById('atT').textContent=ds.length;
+  document.getElementById('atP').textContent=pr;
+  document.getElementById('atA').textContent=ab;
+  document.getElementById('atR').textContent=ds.length?Math.round(pr/ds.length*100)+'%':'—';
+  const b=document.getElementById('attBody');
+  if(!ds.length){b.innerHTML='<div class="emp"><div style="font-size:34px;opacity:.28">✓</div><div style="font-style:italic;margin-top:8px">No students for this selection</div></div>';return;}
+  b.innerHTML=ds.map(s=>{
+    const at=attendance[dt][s.id]||'';
+    return `<div class="tr" style="grid-template-columns:2fr 1.2fr .9fr 1.2fr"><div><div class="snm">${s.firstName} ${s.lastName}</div><div class="spr">${s.parentFirst} ${s.parentLast}</div></div><div class="ctm">${s.time||'—'}</div><div class="ctm">${s.day}</div><div style="display:flex;gap:4px"><button class="btn bprs" style="${at==='present'?'background:rgba(45,106,79,.38)':''}" onclick="markAt('${s.id}','present')">${at==='present'?'✓ Present':'Present'}</button><button class="btn babs" style="${at==='absent'?'background:rgba(139,26,26,.38)':''}" onclick="markAt('${s.id}','absent')">${at==='absent'?'✗ Absent':'Absent'}</button></div></div>`;
+  }).join('');
+}
+async function markAt(id,st){
+  const dt=getDt();if(!attendance[dt])attendance[dt]={};
+  attendance[dt][id]=attendance[dt][id]===st?undefined:st;
+  if(attendance[dt][id]===undefined)delete attendance[dt][id];
+  const status=attendance[dt][id]||'';
+  await fetch(SURL+'?action=saveAttendance&date='+encodeURIComponent(dt)+'&studentId='+encodeURIComponent(id)+'&status='+encodeURIComponent(status));
+  renderAtt();
+  const s=students.find(x=>x.id==id);if(s)toast(s.firstName+' marked '+st);
+}
+
+// VIDEOS
+let vidFiles={};
+function handleVid(inp){if(inp.files[0])document.getElementById('vFName').textContent='📎 '+inp.files[0].name;}
+function addVid(){
+  const t=document.getElementById('vTtl').value.trim();
+  const c=document.getElementById('vCat').value;
+  const f=document.getElementById('vFile').files[0];
+  if(!t){toast('Please enter a title');return;}
+  if(!f){toast('Please select a video');return;}
+  const id='v'+Date.now(),url=URL.createObjectURL(f);
+  vidFiles[id]=url;videos.push({id,title:t,cat:c,url});
+  document.getElementById('vTtl').value='';document.getElementById('vFile').value='';document.getElementById('vFName').textContent='';
+  renderVids();renderPVids();toast('✓ "'+t+'" added');
+}
+function renderVids(){
+  const cf=document.getElementById('vFilt').value;
+  const fl=videos.filter(v=>cf==='All'||v.cat===cf);
+  const g=document.getElementById('vidGrid');
+  if(!fl.length){g.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:9px">🎬</div><div style="font-style:italic">No videos found</div></div>';return;}
+  g.innerHTML=fl.map(v=>`<div class="vc"><div class="vth" onclick="playVid('${v.id}','${v.title}','${v.cat}')"><video src="${v.url}" style="width:100%;height:100%;object-fit:cover;pointer-events:none"></video><div class="vov"><div class="vpi">▶</div></div></div><div class="vif"><div class="vtitle">${v.title}</div><span class="vtag">${v.cat}</span><button class="btn bun" style="margin-left:7px;font-size:8px" onclick="delVid('${v.id}')">Remove</button></div></div>`).join('');
+}
+function renderPVids(){
+  const cf=document.getElementById('pvFilt').value;
+  const fl=videos.filter(v=>cf==='All'||v.cat===cf);
+  const g=document.getElementById('pVidG');
+  if(!fl.length){g.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:9px">🎬</div><div style="font-style:italic">No videos yet</div></div>';return;}
+  g.innerHTML=fl.map(v=>`<div class="vc"><div class="vth" onclick="playVid('${v.id}','${v.title}','${v.cat}')"><video src="${v.url}" style="width:100%;height:100%;object-fit:cover;pointer-events:none"></video><div class="vov"><div class="vpi">▶</div></div></div><div class="vif"><div class="vtitle">${v.title}</div><span class="vtag">${v.cat}</span></div></div>`).join('');
+}
+function playVid(id,t,c){
+  const v=videos.find(x=>x.id===id);if(!v)return;
+  document.getElementById('vMT').textContent=t;document.getElementById('vMS').textContent=c;
+  document.getElementById('vMPl').src=v.url;document.getElementById('vidMov').classList.add('open');
+}
+function delVid(id){videos=videos.filter(v=>v.id!==id);if(vidFiles[id]){URL.revokeObjectURL(vidFiles[id]);delete vidFiles[id];}renderVids();renderPVids();toast('Video removed');}
+
+// EVENTS
+function addEvt(){
+  const n=document.getElementById('eName').value.trim();
+  const d=document.getElementById('eDate').value;
+  const ds=document.getElementById('eDesc').value.trim();
+  if(!n||!d){toast('Please fill name and date');return;}
+  events.push({id:'e'+Date.now(),name:n,date:d,desc:ds});
+  events.sort((a,b)=>new Date(a.date)-new Date(b.date));
+  document.getElementById('eName').value='';document.getElementById('eDate').value='';document.getElementById('eDesc').value='';
+  persistData();renderEvts();toast('✓ "'+n+'" added');
+}
+function renderEvts(){
+  const html=events.length?events.map(e=>{
+    const d=new Date(e.date+'T12:00:00');
+    return `<div class="evi"><div class="edb"><div class="edd">${d.getDate()}</div><div class="edm">${d.toLocaleString('default',{month:'short'}).toUpperCase()}</div></div><div style="flex:1"><div class="enm">${e.name}</div>${e.desc?`<div class="edsc">${e.desc}</div>`:''}</div><button class="btn bun" onclick="delEvt('${e.id}')">Remove</button></div>`;
+  }).join(''):'<div class="emp"><div style="font-size:34px;opacity:.28;margin-bottom:8px">📅</div><div style="font-style:italic">No events yet</div></div>';
+  document.getElementById('evtList').innerHTML=html;
+  document.getElementById('pEvtL').innerHTML=events.length?events.map(e=>{
+    const d=new Date(e.date+'T12:00:00');
+    return `<div class="evi"><div class="edb"><div class="edd">${d.getDate()}</div><div class="edm">${d.toLocaleString('default',{month:'short'}).toUpperCase()}</div></div><div><div class="enm">${e.name}</div>${e.desc?`<div class="edsc">${e.desc}</div>`:''}</div></div>`;
+  }).join(''):'<div class="emp"><div style="font-size:32px;opacity:.28;margin-bottom:7px">📅</div><div style="font-style:italic">No events yet</div></div>';
+}
+function delEvt(id){events=events.filter(e=>e.id!==id);persistData();renderEvts();toast('Event removed');}
+
+// PHOTOS
+function handlePhotoFiles(inp){
+  selectedPhotoFiles=Array.from(inp.files);
+  document.getElementById('photoFileNames').textContent=selectedPhotoFiles.length?'📎 '+selectedPhotoFiles.length+' photo(s) selected':'';
+}
+function uploadPhotos(){
+  const evtName=document.getElementById('photoEvt').value.trim();
+  const evtDate=document.getElementById('photoDate').value;
+  if(!evtName){toast('Please enter an event name');return;}
+  if(!selectedPhotoFiles.length){toast('Please select at least one photo');return;}
+  selectedPhotoFiles.forEach(file=>{
+    const url=URL.createObjectURL(file);
+    photos.push({id:'p'+Date.now()+Math.random(),event:evtName,date:evtDate,url,name:file.name});
+  });
+  document.getElementById('photoEvt').value='';
+  document.getElementById('photoDate').value='';
+  document.getElementById('photoFiles').value='';
+  document.getElementById('photoFileNames').textContent='';
+  selectedPhotoFiles=[];
+  persistData();updatePhotoFilters();renderPhotos();renderParentPhotos();
+  toast('✓ Photos uploaded!');
+}
+function updatePhotoFilters(){
+  const events=[...new Set(photos.map(p=>p.event))];
+  ['photoFilter','pPhotoFilter'].forEach(id=>{
+    const sel=document.getElementById(id);
+    const cur=sel.value;
+    sel.innerHTML='<option value="All">All Events</option>';
+    events.forEach(e=>{const o=document.createElement('option');o.value=e;o.textContent=e;sel.appendChild(o);});
+    if(events.includes(cur))sel.value=cur;
+  });
+}
+function renderPhotos(){
+  const filter=document.getElementById('photoFilter').value;
+  const fl=photos.filter(p=>filter==='All'||p.event===filter);
+  const g=document.getElementById('photoGrid');
+  if(!fl.length){g.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:10px">📷</div><div style="font-style:italic">No photos yet</div></div>';return;}
+  g.innerHTML=fl.map(p=>`<div class="photo-card" onclick="openPhotoLg('${p.id}')"><img src="${p.url}" alt="${p.event}"><div class="photo-card-info"><div class="photo-event">${p.event}</div>${p.date?`<div class="photo-date">${new Date(p.date+'T12:00:00').toLocaleDateString('default',{month:'short',day:'numeric',year:'numeric'})}</div>`:''}</div></div><button class="btn bun" style="margin:4px 0 10px 4px;font-size:8px" onclick="event.stopPropagation();delPhoto('${p.id}')">Remove</button>`).join('');
+}
+function renderParentPhotos(){
+  const filter=document.getElementById('pPhotoFilter').value;
+  const fl=photos.filter(p=>filter==='All'||p.event===filter);
+  const g=document.getElementById('pPhotoGrid');
+  if(!fl.length){g.innerHTML='<div class="emp"><div style="font-size:36px;opacity:.28;margin-bottom:9px">📷</div><div style="font-style:italic">No photos yet</div></div>';return;}
+  g.innerHTML=fl.map(p=>`<div class="photo-card" onclick="openPhotoLg('${p.id}')"><img src="${p.url}" alt="${p.event}"><div class="photo-card-info"><div class="photo-event">${p.event}</div>${p.date?`<div class="photo-date">${new Date(p.date+'T12:00:00').toLocaleDateString('default',{month:'short',day:'numeric',year:'numeric'})}</div>`:''}</div></div>`).join('');
+}
+function openPhotoLg(id){
+  const p=photos.find(x=>x.id===id);if(!p)return;
+  document.getElementById('photoLgImg').src=p.url;
+  document.getElementById('photoLgTitle').textContent=p.event;
+  document.getElementById('photoLgDate').textContent=p.date?new Date(p.date+'T12:00:00').toLocaleDateString('default',{month:'long',day:'numeric',year:'numeric'}):'';
+  document.getElementById('photoMov').classList.add('open');
+}
+function delPhoto(id){photos=photos.filter(p=>p.id!==id);persistData();updatePhotoFilters();renderPhotos();renderParentPhotos();toast('Photo removed');}
+
+// MESSAGES
+async function sendMsg(){
+  const sub=document.getElementById('mSub').value.trim();
+  const bod=document.getElementById('mBod').value.trim();
+  if(!sub||!bod){toast('Please fill in subject and message');return;}
+  const _l=Array.isArray(loggedIn)?loggedIn[0]:loggedIn;
+  const pn=_l?`${_l.parentFirst} ${_l.parentLast} (${_l.firstName}${Array.isArray(loggedIn)&&loggedIn.length>1?' +'+(loggedIn.length-1)+' more':''})`:'Parent';
+  const msg={id:'m'+Date.now(),from:pn,email:(_l?.parentEmail||''),subject:sub,body:bod,time:new Date().toLocaleString(),read:false};
+  document.getElementById('mSub').value='';document.getElementById('mBod').value='';
+  toast('✉ Sending message...');
+  try{
+    await fetch(SURL+'?action=saveMessage&id='+encodeURIComponent(msg.id)+'&from='+encodeURIComponent(msg.from)+'&email='+encodeURIComponent(msg.email)+'&subject='+encodeURIComponent(msg.subject)+'&body='+encodeURIComponent(msg.body)+'&time='+encodeURIComponent(msg.time));
+    toast('✉ Message sent! We\'ll reply within 24 hours.');
+  }catch(err){
+    toast('✉ Message sent!');
+  }
+  // Also keep locally so parent sees it immediately
+  messages.unshift(msg);persistData();renderMsgs();
+}
+async function loadMessages(){
+  const l=document.getElementById('msgList');
+  l.innerHTML='<div class="lds"><div class="spin"></div><div style="font-style:italic;font-size:13px">Loading messages...</div></div>';
+  try{
+    const res=await fetch(SURL+'?action=getMessages');
+    const data=await res.json();
+    if(data.messages&&data.messages.length){
+      messages=data.messages;
+    }
+  }catch(err){console.error('Failed to load messages:',err);}
+  renderMsgs();
+}
+function renderMsgs(){
+  const unr=messages.filter(m=>!m.read).length;
+  const mb=document.getElementById('msgBdg');
+  mb.textContent=unr>0?unr+' New':'';mb.style.display=unr>0?'inline-flex':'none';
+  const l=document.getElementById('msgList');
+  if(!messages.length){l.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28;margin-bottom:9px">✉</div><div style="font-style:italic">No messages yet</div></div>';return;}
+  l.innerHTML=messages.map(m=>`<div class="mc"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><div class="mfr">${m.from}</div><span class="mstt ${m.read?'mrd':'mnw'}">${m.read?'Read':'New'}</span></div><div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;color:var(--bgo);margin-bottom:5px">${m.subject}</div><div class="mbo">${m.body}</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><div class="mti">${m.time}${m.email?' · '+m.email:''}</div>${!m.read?`<button class="btn bpd" onclick="rdMsg('${m.id}')">✓ Mark as Read</button>`:''}</div></div>`).join('');
+}
+async function rdMsg(id){
+  const m=messages.find(x=>x.id===id);
+  if(m&&!m.read){
+    m.read=true;renderMsgs();toast('Message marked as read');
+    try{await fetch(SURL+'?action=markRead&id='+encodeURIComponent(id));}
+    catch(err){console.error('Failed to mark read on sheet:',err);}
+    persistData();
+  }
+}
+
+// PARENT AUTH
+function setMode(m){
+  authMode=m;
+  document.getElementById('lgTgl').classList.toggle('active',m==='login');
+  document.getElementById('rgTgl').classList.toggle('active',m==='register');
+  document.getElementById('pinLbl').textContent=m==='login'?'Enter your 4-digit PIN':'Create a 4-digit PIN';
+  document.getElementById('aBtn').textContent=m==='login'?'Sign In':'Create Account';
+  document.getElementById('pErr').textContent='';pin='';upPins();
+}
+function pp(k){
+  if(k==='c'){pin='';upPins();return;}
+  if(k==='b'){pin=pin.slice(0,-1);upPins();return;}
+  if(pin.length>=4)return;pin+=k;upPins();
+  if(pin.length===4&&authMode==='login')setTimeout(doAuth,200);
+}
+function upPins(){for(let i=0;i<4;i++)document.getElementById('pd'+i).classList.toggle('filled',i<pin.length);}
+async function doAuth(){
+  const em=document.getElementById('aEmail').value.trim().toLowerCase();
+  document.getElementById('pErr').textContent='';
+  if(!em){document.getElementById('pErr').textContent='Please enter your email';return;}
+  if(pin.length<4){document.getElementById('pErr').textContent='Please enter a 4-digit PIN';return;}
+  if(!students||students.length===0){document.getElementById('pErr').textContent='Loading student data... please wait';setTimeout(doAuth,1000);return;}
+  const matched=students.filter(s=>s.parentEmail&&s.parentEmail.trim().toLowerCase()===em);
+  if(!matched.length){document.getElementById('pErr').textContent='Email not found in our records';return;}
+  document.getElementById('aBtn').disabled=true;
+  document.getElementById('aBtn').textContent='Please wait...';
+  try{
+    if(authMode==='register'){
+      const checkRes=await fetch(SURL+'?action=checkAccount&email='+encodeURIComponent(em));
+      const checkData=await checkRes.json();
+      if(checkData.exists){document.getElementById('pErr').textContent='Account exists — please sign in';document.getElementById('aBtn').disabled=false;document.getElementById('aBtn').textContent='Create Account';return;}
+      const createRes=await fetch(SURL+'?action=createAccount&email='+encodeURIComponent(em)+'&pin='+encodeURIComponent(pin));
+      const createData=await createRes.json();
+      if(createData.success){loggedIn=matched;enterDash(matched);logVisit(matched[0].parentEmail,'Account Created');toast('Account created!');}
+      else{document.getElementById('pErr').textContent='Error creating account. Try again.';}
+    }else{
+      const verifyRes=await fetch(SURL+'?action=verifyPin&email='+encodeURIComponent(em)+'&pin='+encodeURIComponent(pin));
+      const verifyData=await verifyRes.json();
+      if(verifyData.valid){loggedIn=matched;enterDash(matched);logVisit(matched[0].parentEmail,'Login');}
+      else{document.getElementById('pErr').textContent=verifyData.error||'Incorrect PIN';pin='';upPins();}
+    }
+  }catch(err){document.getElementById('pErr').textContent='Connection error. Try again.';}
+  document.getElementById('aBtn').disabled=false;
+  document.getElementById('aBtn').textContent=authMode==='login'?'Sign In':'Create Account';
+}
+async function enterDash(students_arr){
+  const s=Array.isArray(students_arr)?students_arr[0]:students_arr;
+  document.getElementById('pLogin').style.display='none';
+  document.getElementById('pDash').style.display='block';
+  document.getElementById('loutBtn').style.display='block';
+  await buildPDash(s);pin='';upPins();
+}
+function doLogout(){
+  loggedIn=null;
+  document.getElementById('pLogin').style.display='block';
+  document.getElementById('pDash').style.display='none';
+  document.getElementById('loutBtn').style.display='none';
+  document.getElementById('aEmail').value='';pin='';upPins();
+  document.getElementById('pErr').textContent='';
+  toast('Signed out');
+}
+function checkNotifications(students_arr){
+  const allKids=Array.isArray(students_arr)?students_arr:[students_arr];
+  const today=new Date();
+  const dayOfMonth=today.getDate();
+  if(dayOfMonth!==1&&dayOfMonth!==8&&dayOfMonth!==11){document.getElementById('notifBanner').style.display='none';return;}
+  let dueKids=[],lateKids=[];
+  allKids.forEach(kid=>{
+    const status=getSt(kid,MONTHS[0]);
+    if(status==='Not Paid')dueKids.push(kid.firstName);
+    else if(status==='Late')lateKids.push(kid.firstName);
+  });
+  const banner=document.getElementById('notifBanner');
+  const title=document.getElementById('notifTitle');
+  const msg=document.getElementById('notifMsg');
+  if(dayOfMonth===11&&lateKids.length>0){
+    banner.style.display='block';banner.style.background='linear-gradient(135deg,rgba(139,26,26,.4),rgba(92,14,14,.5))';
+    title.textContent='⚠ LATE PAYMENT';title.style.color='var(--rd)';
+    msg.innerHTML=`<strong>${lateKids.join(', ')}</strong> ${lateKids.length>1?'have':'has'} overdue payments with a late fee applied.`;
+  }else if(dayOfMonth===8&&dueKids.length>0){
+    banner.style.display='block';banner.style.background='linear-gradient(135deg,rgba(183,101,10,.3),rgba(139,26,26,.3))';
+    title.textContent='⚠ PAYMENT DUE IN 2 DAYS';title.style.color='var(--am)';
+    msg.innerHTML=`Payment for <strong>${dueKids.join(', ')}</strong> is due on the 10th. Please pay soon to avoid a late fee.`;
+  }else if(dayOfMonth===1){
+    banner.style.display='block';banner.style.background='linear-gradient(135deg,rgba(201,153,58,.2),rgba(139,26,26,.2))';
+    title.textContent='💰 PAYMENT DUE THIS MONTH';title.style.color='var(--bgo)';
+    msg.textContent='Monthly tuition for '+MONTHS[0].split(' ')[0]+' is due by the 10th. Check the Payments tab for details.';
+  }else{
+    banner.style.display='none';
+  }
+}
+async function buildPDash(students_arr){
+  try{
+    const attRes=await fetch(SURL+'?action=getAttendance');
+    const attData=await attRes.json();
+    attendance=attData.attendance||{};
+  }catch(e){console.error('Failed to load attendance:',e);}
+  const s=Array.isArray(students_arr)?students_arr[0]:students_arr;
+  const allKids=Array.isArray(loggedIn)?loggedIn:[loggedIn];
+  const kidsHtml=allKids.map(k=>{
+    const ki=(k.firstName[0]||'')+(k.lastName[0]||'');
+    return `<div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(201,153,58,.08)"><div class="sav" style="width:40px;height:40px;font-size:14px">${ki}</div><div><div class="sin" style="font-size:15px">${k.firstName} ${k.lastName}</div><div class="sid">${k.day} · ${k.time}</div></div></div>`;
+  }).join('');
+  const parentName=allKids[0].parentFirst+' '+allKids[0].parentLast;
+  document.getElementById('pSIC').innerHTML=`<div style="flex:1"><div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,230,192,.4);margin-bottom:8px">Welcome, ${parentName}</div>${kidsHtml}${allKids.length>1?`<div class="sibdg" style="margin-top:10px">🎵 ${allKids.length} Students Enrolled</div>`:'<div class="sibdg" style="margin-top:10px">🎵 Bharatanatyam Student</div>'}</div>`;
+  const fees={'8:30 am - 9:30 am':60,'5:00 pm - 6:00 pm':70,'6:15 pm - 7:15 pm':70,'9:00 am - 10:00 am':60,'5:30 pm - 6:30 pm':65,'7:00 pm - 8:00 pm':60,'5.15 pm - 6.15 pm':65,'6:30 pm - 7:30 pm':60,'8:00 am - 9:00 am':80,'10:00 am - 11:00 am':70,'11:00 am - 12:00 pm':65,'12:00 pm - 1:00 pm':60,'1:00 pm - 2:00 pm':60};
+  const getFee=t=>{if(!t)return 70;if(t.includes(','))return fees[t.split(',')[0].trim()]||70;return fees[t.trim()]||70;};
+  const allKids2=Array.isArray(loggedIn)?loggedIn:[loggedIn];
+  let totalDue=0;
+  allKids2.forEach(kid=>{
+    const mFee=getFee(kid.time);
+    MONTHS.forEach((monthStr,idx)=>{
+      const status=getSt(kid,monthStr);
+      if(status==='Paid')return;
+      if(idx===0){if(status==='Late')totalDue+=mFee+10;else if(status==='Not Paid')totalDue+=mFee;}
+    });
+  });
+  const monthlyFee=getFee(s.time);
+  document.getElementById('pFeeInfo').textContent=`${s.day} · ${s.time} · $${monthlyFee}/month${s.time.includes(',')?'(multi-class)':''}`;
+  document.getElementById('balFee').textContent=allKids2.length>1?'See below':'$'+monthlyFee;
+  document.getElementById('balDue').textContent=totalDue>0?'$'+totalDue:'$0';
+  document.getElementById('balDue').style.color=totalDue>0?'var(--rd)':'var(--gn)';
+  const allKids3=Array.isArray(loggedIn)?loggedIn:[loggedIn];
+  document.getElementById('pPayG').innerHTML=allKids3.map(kid=>{
+    const mFee=getFee(kid.time);
+    const kidHtml=MONTHS.map(m=>{const st=getSt(kid,m);const c=st==='Paid'?'bp':st==='Late'?'bl':'bu';return `<div class="pmc"><div class="pmn">${m.split(' ')[0]}</div><span class="bdg ${c}"><span class="bdt"></span>${st}</span></div>`;}).join('');
+    return `<div style="margin-bottom:16px"><div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--go);margin-bottom:8px">${kid.firstName} ${kid.lastName} · $${mFee}/mo</div><div class="pgrd">${kidHtml}</div></div>`;
+  }).join('');
+  const ams=['March','April','May','June','July','August'];
+  const allKids4=Array.isArray(loggedIn)?loggedIn:[loggedIn];
+  document.getElementById('pAttG').innerHTML=allKids4.map(kid=>{
+    const attHtml=ams.map(mn=>{
+      const mi=MMAP.indexOf(mn),yr=2026;const dim=new Date(yr,mi+1,0).getDate();
+      let pr=0,tot=0;
+      for(let d=1;d<=dim;d++){const ds=`${yr}-${String(mi+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;if(attendance[ds]&&attendance[ds][kid.id]!==undefined){tot++;if(attendance[ds][kid.id]==='present')pr++;}}
+      const pct=tot>0?Math.round(pr/tot*100):null;
+      const cl=pct===null?'':(pct>=90?'good':pct>=75?'warn':'bad');
+      return `<div class="amc"><div class="pmn">${mn}</div><div class="apc ${cl}">${pct!==null?pct+'%':'—'}</div><div style="font-size:9px;color:rgba(245,230,192,.28);font-family:'Raleway',sans-serif;margin-top:2px">${tot>0?pr+'/'+tot:'No data'}</div></div>`;
+    }).join('');
+    return `<div style="margin-bottom:16px"><div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--go);margin-bottom:8px">${kid.firstName} ${kid.lastName}</div><div class="asg">${attHtml}</div></div>`;
+  }).join('');
+  renderParentFaqs();
+  updatePhotoFilters();renderPVids();renderEvts();renderParentPhotos();
+  checkNotifications(students_arr);
+}
+function tFaq(i){document.getElementById('fq'+i).classList.toggle('open');}
+function showPSec(id,el){
+  document.querySelectorAll('.psec').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.pnav button').forEach(b=>b.classList.remove('active'));
+  if(el)el.classList.add('active');
+  if(id==='pv')renderPVids();
+  if(id==='pphotos')renderParentPhotos();
+}
+
+// ANALYTICS
+function renderAnalytics(){
+  const filter=document.getElementById('anaFilter').value;
+  const filtered=analytics.filter(a=>{
+    if(filter==='login')return a.action.includes('Login')||a.action.includes('Account Created');
+    if(filter==='admin')return a.user==='admin';
+    return true;
+  });
+  const now=new Date();
+  const today=filtered.filter(a=>new Date(a.time).toDateString()===now.toDateString()).length;
+  const weekAgo=new Date(now.getTime()-7*24*60*60*1000);
+  const week=filtered.filter(a=>new Date(a.time)>weekAgo).length;
+  const unique=new Set(filtered.map(a=>a.user)).size;
+  document.getElementById('anaTotal').textContent=filtered.length;
+  document.getElementById('anaUnique').textContent=unique;
+  document.getElementById('anaToday').textContent=today;
+  document.getElementById('anaWeek').textContent=week;
+  const body=document.getElementById('anaBody');
+  if(!filtered.length){body.innerHTML='<div class="emp"><div style="font-size:38px;opacity:.28">📊</div><div style="font-style:italic">No analytics data yet</div></div>';return;}
+  body.innerHTML=filtered.slice().reverse().slice(0,100).map(a=>{
+    const t=new Date(a.time);
+    return `<div class="tr" style="grid-template-columns:2fr 1.5fr 1fr"><div class="snm">${a.user}</div><div class="ctm">${a.action}</div><div class="ctm" style="font-size:11px">${t.toLocaleDateString()+' '+t.toLocaleTimeString()}</div></div>`;
+  }).join('');
+}
+
+// SETTINGS — CATEGORIES
+function refreshCategorySelects(){
+  ['vCat','vFilt','pvFilt'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    const cur=el.value;
+    const isFilter=id==='vFilt'||id==='pvFilt';
+    el.innerHTML=(isFilter?'<option value="All">All Categories</option>':'')+videoCategories.map(c=>`<option>${c}</option>`).join('');
+    if(videoCategories.includes(cur))el.value=cur;
+  });
+}
+function addCategory(){
+  const inp=document.getElementById('newCatInput');
+  const val=inp.value.trim();
+  if(!val){toast('Please enter a category name');return;}
+  if(videoCategories.includes(val)){toast('Category already exists');return;}
+  videoCategories.push(val);
+  inp.value='';
+  persistData();refreshCategorySelects();renderSettings();
+  toast('✓ Category "'+val+'" added');
+}
+function delCategory(idx){
+  const cat=videoCategories[idx];
+  if(DEFAULT_CATS.includes(cat)){toast('Cannot remove a default category');return;}
+  videoCategories.splice(idx,1);
+  persistData();refreshCategorySelects();renderSettings();
+  toast('Category removed');
+}
+function renderCatList(){
+  const el=document.getElementById('catList');
+  if(!el)return;
+  el.innerHTML=videoCategories.map((c,i)=>`
+    <div class="tr" style="grid-template-columns:1fr auto;padding:10px 14px;border-bottom:1px solid rgba(201,153,58,.06)">
+      <div class="ctm" style="font-size:13px;color:var(--pg)">${c}${DEFAULT_CATS.includes(c)?'<span style="font-family:Raleway,sans-serif;font-size:8px;letter-spacing:1px;color:rgba(245,230,192,.3);margin-left:8px">DEFAULT</span>':''}</div>
+      ${!DEFAULT_CATS.includes(c)?`<button class="btn bun" onclick="delCategory(${i})">Remove</button>`:'<span style="font-size:11px;color:rgba(245,230,192,.2);font-family:Raleway,sans-serif">—</span>'}
+    </div>`).join('');
+}
+
+// SETTINGS — FAQS
+function addFaq(){
+  const q=document.getElementById('newFaqQ').value.trim();
+  const a=document.getElementById('newFaqA').value.trim();
+  if(!q||!a){toast('Please fill in both question and answer');return;}
+  FAQS.push({q,a});
+  document.getElementById('newFaqQ').value='';
+  document.getElementById('newFaqA').value='';
+  persistData();renderSettings();renderParentFaqs();
+  toast('✓ FAQ added');
+}
+function delFaq(idx){
+  FAQS.splice(idx,1);
+  persistData();renderSettings();renderParentFaqs();
+  toast('FAQ removed');
+}
+function editFaq(idx){
+  const f=FAQS[idx];
+  const el=document.getElementById('faqItem'+idx);
+  el.innerHTML=`
+    <div style="padding:12px 14px;border-bottom:1px solid rgba(201,153,58,.06)">
+      <div class="fg" style="margin-bottom:8px"><label class="fl">Question</label><input class="fi" id="editFaqQ${idx}" value="${f.q.replace(/"/g,'&quot;')}"></div>
+      <div class="fg" style="margin-bottom:8px"><label class="fl">Answer</label><textarea class="fi" id="editFaqA${idx}" rows="3">${f.a}</textarea></div>
+      <div style="display:flex;gap:8px">
+        <button class="btn bpd" onclick="saveFaq(${idx})">Save</button>
+        <button class="btn bsec" onclick="renderSettings()">Cancel</button>
+      </div>
+    </div>`;
+}
+function saveFaq(idx){
+  const q=document.getElementById('editFaqQ'+idx).value.trim();
+  const a=document.getElementById('editFaqA'+idx).value.trim();
+  if(!q||!a){toast('Please fill in both fields');return;}
+  FAQS[idx]={q,a};
+  persistData();renderSettings();renderParentFaqs();
+  toast('✓ FAQ updated');
+}
+function renderFaqAdminList(){
+  const el=document.getElementById('faqAdminList');
+  if(!el)return;
+  if(!FAQS.length){el.innerHTML='<div class="emp" style="padding:20px">No FAQs yet</div>';return;}
+  el.innerHTML=FAQS.map((f,i)=>`
+    <div id="faqItem${i}" class="tw" style="border-radius:8px;margin-bottom:8px;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;padding:12px 14px;gap:12px">
+        <div style="flex:1">
+          <div style="font-size:13px;color:var(--pg);font-weight:500;margin-bottom:4px">${f.q}</div>
+          <div style="font-size:12px;color:rgba(245,230,192,.44);font-style:italic;line-height:1.5">${f.a}</div>
+        </div>
+        <div style="display:flex;gap:6px;flex-shrink:0">
+          <button class="btn brc" onclick="editFaq(${i})">Edit</button>
+          <button class="btn bun" onclick="delFaq(${i})">Remove</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function renderSettings(){
+  renderCatList();
+  renderFaqAdminList();
+}
+function renderParentFaqs(){
+  const el=document.getElementById('faqL');
+  if(!el)return;
+  el.innerHTML=FAQS.map((f,i)=>`<div class="fqi" id="fq${i}"><div class="fqq" onclick="tFaq(${i})"><span>${f.q}</span><span class="arr">▼</span></div><div class="fqa">${f.a}</div></div>`).join('');
+}
+
+// UTILS
+function cMov(id){document.getElementById(id).classList.remove('open');if(id==='vidMov')document.getElementById('vMPl').pause();}
+function toast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+document.querySelectorAll('.mov').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)cMov(m.id);}));
+document.getElementById('attDt').addEventListener('change',renderAtt);
+document.getElementById('attDt').value=new Date().toISOString().split('T')[0];
+
+// PERSIST
+function persistData(){
+  localStorage.setItem('bsd_data',JSON.stringify({attendance,events,messages,photos,videoCategories,FAQS}));
+}
+try{
+  const saved=JSON.parse(localStorage.getItem('bsd_data')||'{}');
+  if(saved.attendance)attendance=saved.attendance;
+  if(saved.events){events=saved.events;renderEvts();}
+  if(saved.messages){messages=saved.messages;renderMsgs();}
+  if(saved.photos){photos=saved.photos;updatePhotoFilters();}
+  if(saved.videoCategories)videoCategories=saved.videoCategories;
+  if(saved.FAQS)FAQS=saved.FAQS;
+}catch(e){}
+refreshCategorySelects();
+
+loadStudents();renderEvts();loadMessages();
+</script>
+</body>
+</html>
